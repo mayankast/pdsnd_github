@@ -153,6 +153,7 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
+    # idxmax will fetch the most used index value counted by value_counts
     max_strt_stn = df['Start Station'].value_counts().idxmax()
     print ("Most commonly used start station is {}".format(max_strt_stn))
     # TO DO: display most commonly used end station
